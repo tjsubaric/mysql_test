@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from 'react';
-// import {Link} from 'react-router-dom';
 
 function Tweet() {
     useEffect( () => {
@@ -32,7 +31,7 @@ function Tweet() {
                 items.map(item => (
                     <div class="row padding">
                         <div class="alert alert-info rounded-pill" role="alert">
-                            <i class="fa fa-user mr-2"></i> <i>{item.user.fullname} ({item.user.username}): {item.tweet}</i>
+                            <i class="fa fa-user mr-2"></i> <i>{item.fullname} ({item.username}): {item.tweet}</i>
                         </div>
                     </div>       
                 ))
